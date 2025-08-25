@@ -1,3 +1,4 @@
+
 'use client';
 
 import { Renderer, Program, Mesh, Color, Triangle } from "ogl";
@@ -98,16 +99,26 @@ vec3 StarLayer(vec2 uv) {
       float glossLocal = tri(uStarSpeed / (PERIOD * seed + 1.0));
       float flareSize = smoothstep(0.9, 1.0, size) * glossLocal;
 
-      float red = smoothstep(STAR_COLOR_CUTOFF, 1.0, Hash21(si + 1.0)) + STAR_COLOR_CUTOFF;
-      float blu = smoothstep(STAR_COLOR_CUTOFF, 1.0, Hash21(si + 3.0)) + STAR_COLOR_CUTOFF;
-      float grn = min(red, blu) * seed;
-      vec3 base = vec3(red, grn, blu);
-      
-      float hue = atan(base.g - base.r, base.b - base.r) / (2.0 * 3.14159) + 0.5;
-      hue = fract(hue + uHueShift / 360.0);
-      float sat = length(base - vec3(dot(base, vec3(0.299, 0.587, 0.114)))) * uSaturation;
-      float val = max(max(base.r, base.g), base.b);
-      base = hsv2rgb(vec3(hue, sat, val));
+      // Interstellar color palette
+      vec3 color1 = vec3(244.0/255.0, 227.0/255.0, 179.0/255.0); // #F4E3B4
+      vec3 color2 = vec3(242.0/255.0, 208.0/255.0, 186.0/255.0); // #F2D0BA
+      vec3 color3 = vec3(139.0/255.0, 72.0/255.0, 43.0/255.0);   // #8B482B
+      vec3 color4 = vec3(216.0/255.0, 155.0/255.0, 141.0/255.0); // #D89B8D
+      vec3 color5 = vec3(255.0/255.0, 255.0/255.0, 255.0/255.0); // A bright white for contrast
+
+      vec3 base;
+      float randColor = fract(seed * 123.456);
+      if (randColor < 0.2) {
+          base = color1;
+      } else if (randColor < 0.4) {
+          base = color2;
+      } else if (randColor < 0.6) {
+          base = color3;
+      } else if (randColor < 0.8) {
+          base = color4;
+      } else {
+          base = color5;
+      }
 
       vec2 pad = vec2(tris(seed * 34.0 + uTime * uSpeed / 10.0), tris(seed * 38.0 + uTime * uSpeed / 30.0)) - 0.5;
 
