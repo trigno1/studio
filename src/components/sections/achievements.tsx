@@ -1,12 +1,13 @@
 'use client';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Trophy, Zap, Award } from "lucide-react";
+import { Trophy, Zap, Award, BookOpen } from "lucide-react";
 import { motion } from "framer-motion";
 
 const achievements = [
     { icon: <Trophy className="h-6 w-6 text-primary" />, date: "May 2023", title: "Winner, ETHGlobal Hackathon", description: "Led a team to victory with a novel DeFi protocol, securing first place among 200+ teams." },
     { icon: <Award className="h-6 w-6 text-primary" />, date: "Jan 2023", title: "Top Community Contributor", description: "Recognized as a top contributor for the open-source project 'AeroUI' for significant code contributions." },
     { icon: <Zap className="h-6 w-6 text-primary" />, date: "Sep 2022", title: "Speaker at Web3 Con", description: "Invited to speak on the future of decentralized identity, presenting to an audience of over 500 developers." },
+    { icon: <BookOpen className="h-6 w-6 text-primary" />, date: "2018 - 2022", title: "Bachelor of Design", description: "Graduated from the National Institute of Design, specializing in Interaction Design." },
 ];
 
 export default function AchievementsSection() {
@@ -20,8 +21,8 @@ export default function AchievementsSection() {
             transition={{ duration: 0.8 }}
         >
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl md:text-5xl font-bold text-center">Achievements & Milestones</h2>
-                <p className="mt-4 text-lg text-center text-foreground/70 max-w-2xl mx-auto">Key highlights and accomplishments throughout my career.</p>
+                <h2 className="text-3xl md:text-5xl font-bold text-center">Education & Achievements</h2>
+                <p className="mt-4 text-lg text-center text-foreground/70 max-w-2xl mx-auto">My academic background and key accomplishments.</p>
 
                 <div className="relative mt-16 max-w-3xl mx-auto">
                     <div className="absolute left-1/2 top-0 h-full w-0.5 bg-border -translate-x-1/2 hidden md:block"></div>

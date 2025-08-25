@@ -10,6 +10,7 @@ import { Download, ChevronsRight } from 'lucide-react';
 
 const navItems = [
   { name: 'Home', href: '#home' },
+  { name: 'Experience', href: '#experience' },
   { name: 'Portfolio', href: '#portfolio' },
   { name: 'Achievements', href: '#achievements' },
   { name: 'Contact', href: '#contact' },
