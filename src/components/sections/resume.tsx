@@ -20,7 +20,7 @@ export default function ResumeSection() {
                     <div className="p-4 sm:p-6 md:p-8 rounded-xl border shadow-lg">
                         <div className="overflow-hidden rounded-lg">
                             <Image
-                                src="/cv.png"
+                                src="/resume-ss.png"
                                 alt="Tanish Sunita Pareek CV"
                                 width={1200}
                                 height={1697}
