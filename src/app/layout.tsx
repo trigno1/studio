@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/ui/toaster';
+import Galaxy from '@/components/galaxy';
 
 export const metadata: Metadata = {
   title: 'Tanish Sunita Pareek | Portfolio',
@@ -21,6 +22,16 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased">
+        <div style={{ width: '100%', height: '100vh', position: 'fixed', top: 0, left: 0, zIndex: -1 }}>
+          <Galaxy 
+            mouseRepulsion={true}
+            mouseInteraction={true}
+            density={1.5}
+            glowIntensity={0.5}
+            saturation={0.8}
+            hueShift={240}
+          />
+        </div>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

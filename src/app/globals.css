@@ -66,6 +66,6 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-transparent text-foreground;
   }
 }
