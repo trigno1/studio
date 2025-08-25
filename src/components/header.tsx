@@ -7,6 +7,7 @@ import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { ModeToggle } from './mode-toggle';
 
 const navItems = [
   { name: 'Home', href: '#home' },
@@ -78,8 +79,10 @@ export default function Header() {
             )}
           </Link>
         ))}
+        <ModeToggle />
       </nav>
-      <div className="md:hidden">
+      <div className="md:hidden flex items-center gap-2">
+        <ModeToggle />
         <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
           <SheetTrigger asChild>
             <Button variant="ghost" size="icon">
