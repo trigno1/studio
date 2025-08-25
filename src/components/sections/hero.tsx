@@ -2,7 +2,6 @@
 import { Button } from '@/components/ui/button';
 import { Download, Eye } from 'lucide-react';
 import Link from 'next/link';
-import { RpmCounter } from '../rpm-counter';
 import { motion } from 'framer-motion';
 
 export default function HeroSection() {
@@ -38,10 +37,6 @@ export default function HeroSection() {
                     </Link>
                 </Button>
             </div>
-        </div>
-
-        <div className="absolute bottom-8 right-8 z-10">
-            <RpmCounter />
         </div>
     </motion.section>
   );

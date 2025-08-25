@@ -9,6 +9,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay";
+import * as React from "react";
 
 const images = [
     { src: "https://placehold.co/600x400.png", alt: "Tanish Pareek 1", hint: "portrait professional" },
@@ -17,6 +19,10 @@ const images = [
 ];
 
 export default function AboutSection() {
+    const plugin = React.useRef(
+        Autoplay({ delay: 2000, stopOnInteraction: true })
+    );
+
     return (
         <motion.section
             id="about"
@@ -37,7 +43,12 @@ export default function AboutSection() {
                     </p>
                 </div>
                 <div className="order-1 md:order-2">
-                    <Carousel className="w-full max-w-sm mx-auto">
+                    <Carousel 
+                        className="w-full max-w-sm mx-auto"
+                        plugins={[plugin.current]}
+                        onMouseEnter={plugin.current.stop}
+                        onMouseLeave={plugin.current.reset}
+                    >
                         <CarouselContent>
                             {images.map((image, index) => (
                             <CarouselItem key={index}>
