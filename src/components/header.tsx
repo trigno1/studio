@@ -51,7 +51,7 @@ export default function Header() {
       transition={{ duration: 0.5 }}
     >
       <Link href="#home" className="text-2xl font-black uppercase text-primary tracking-widest">
-        Apex
+        Tanish
       </Link>
       <nav className="hidden md:flex items-center space-x-2">
         {navItems.map((item) => (

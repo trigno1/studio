@@ -4,6 +4,7 @@ import { Download, Eye } from 'lucide-react';
 import Link from 'next/link';
 import { RpmCounter } from '../rpm-counter';
 import { motion } from 'framer-motion';
+import { ShootingStars } from '../shooting-stars';
 
 export default function HeroSection() {
   return (
@@ -14,6 +15,7 @@ export default function HeroSection() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
+        <ShootingStars />
         <div className="absolute inset-0 bg-grid-white/[0.05] dark:bg-grid-black/[0.1]"></div>
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 

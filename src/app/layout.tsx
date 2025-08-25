@@ -4,7 +4,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Apex Sunita | Portfolio of Tanish Sunita Pareek',
+  title: 'Tanish Sunita Pareek | Portfolio',
   description: 'Sleek Formula 1–themed personal portfolio for Tanish Sunita Pareek, showcasing projects in UI/UX, Blockchain, Design, and more.',
 };
 
