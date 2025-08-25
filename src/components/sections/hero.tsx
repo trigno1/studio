@@ -11,8 +11,6 @@ export default function HeroSection() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-        <div className="absolute inset-0 bg-grid-white/[0.05]"></div>
-
         <div className="relative z-10 container mx-auto px-4 flex flex-col items-center">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter">
                 <span className="text-primary">Tanish</span> Sunita Pareek
