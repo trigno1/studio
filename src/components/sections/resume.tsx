@@ -17,7 +17,7 @@ export default function ResumeSection() {
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-5xl font-bold text-center">My Resume</h2>
                 <div className="mt-12 max-w-4xl mx-auto">
-                    <div className="bg-card/50 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl border shadow-lg">
+                    <div className="p-4 sm:p-6 md:p-8 rounded-xl border shadow-lg">
                         <div className="overflow-hidden rounded-lg">
                             <Image
                                 src="/cv.png"

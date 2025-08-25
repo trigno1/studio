@@ -32,7 +32,7 @@ export default function ExperienceSection() {
                              <div className="md:absolute md:left-1/2 md:top-1/2 w-4 h-4 bg-primary rounded-full md:-translate-x-1/2 md:-translate-y-1/2 border-4 border-background hidden md:block"></div>
 
                             <div className={`w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8 md:ml-auto'}`}>
-                                <Card className={`w-full text-left bg-card/50 backdrop-blur-sm`}>
+                                <Card className={`w-full text-left`}>
                                     <CardHeader>
                                         <div className="flex items-center gap-4">
                                             <div className="p-2 bg-primary/10 rounded-full">{item.icon}</div>
