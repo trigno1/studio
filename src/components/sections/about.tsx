@@ -26,7 +26,7 @@ export default function AboutSection() {
     return (
         <motion.section
             id="about"
-            className="w-full py-20 lg:py-32 bg-secondary/30"
+            className="w-full py-20 lg:py-32"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
