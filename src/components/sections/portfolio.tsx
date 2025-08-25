@@ -9,7 +9,7 @@ import { Button } from '../ui/button';
 
 const portfolioItems = [
     { id: 1, title: 'Multi-Chain NFT Claiming System', category: 'Blockchain', image: '/nft.png', hint: 'blockchain network', description: 'Developing a decentralized application (DApp) for secure NFT claims across Ethereum and Polygon. Implemented authentication with OAuth, crypto wallets, and QR-based transfers for seamless UX.', tags: ['ThirdWeb', 'Solidity', 'Node.js', 'MongoDB'] },
-    { id: 2, title: 'Smart Resume Analyzer with ATS Grading', category: 'AI/ML', image: 'https://placehold.co/600x400.png', hint: 'resume document', description: 'Developing an application that evaluates resumes using ATS algorithms and provides optimization feedback. Implemented keyword extraction, scoring system, and recommendation engine to enhance ATS compatibility.', tags: ['Python', 'NLP', 'Machine Learning'] },
+    { id: 2, title: 'Smart Resume Analyzer with ATS Grading', category: 'AI/ML', image: '/resume-analyzer.png', hint: 'resume document analysis', description: 'Developing an application that evaluates resumes using ATS algorithms and provides optimization feedback. Implemented keyword extraction, scoring system, and recommendation engine to enhance ATS compatibility.', tags: ['Python', 'NLP', 'Machine Learning'] },
 ];
 
 export default function PortfolioSection() {
