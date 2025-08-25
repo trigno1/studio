@@ -5,15 +5,13 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import { ThemeToggle } from '@/components/theme-toggle';
 import { Download, ChevronsRight } from 'lucide-react';
 
 const navItems = [
   { name: 'Home', href: '#home' },
   { name: 'Experience', href: '#experience' },
   { name: 'Portfolio', href: '#portfolio' },
-  { name: 'Achievements', href: '#achievements' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Education', href: '#education' },
 ];
 
 export default function Header() {
@@ -25,7 +23,7 @@ export default function Header() {
       setScrolled(window.scrollY > 10);
 
       const sections = navItems.map(item => document.getElementById(item.href.substring(1)));
-      let currentSection = '';
+      let currentSection = 'home';
       
       for (const section of sections) {
           if (section && section.offsetTop <= window.scrollY + 100) {
@@ -75,7 +73,6 @@ export default function Header() {
         ))}
       </nav>
       <div className="flex items-center space-x-2">
-        <ThemeToggle />
         <Button asChild className="group overflow-hidden relative">
           <a href="/Tanish_Sunita_Pareek_CV.pdf" download>
             <span className="flex items-center transition-transform duration-300 group-hover:-translate-x-3">
