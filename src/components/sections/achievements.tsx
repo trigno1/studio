@@ -1,13 +1,13 @@
 'use client';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Trophy, Zap, Award, BookOpen } from "lucide-react";
+import { Trophy, Users, BookOpen, Star } from "lucide-react";
 import { motion } from "framer-motion";
 
 const achievements = [
-    { icon: <Trophy className="h-6 w-6 text-primary" />, date: "May 2023", title: "Winner, ETHGlobal Hackathon", description: "Led a team to victory with a novel DeFi protocol, securing first place among 200+ teams." },
-    { icon: <Award className="h-6 w-6 text-primary" />, date: "Jan 2023", title: "Top Community Contributor", description: "Recognized as a top contributor for the open-source project 'AeroUI' for significant code contributions." },
-    { icon: <Zap className="h-6 w-6 text-primary" />, date: "Sep 2022", title: "Speaker at Web3 Con", description: "Invited to speak on the future of decentralized identity, presenting to an audience of over 500 developers." },
-    { icon: <BookOpen className="h-6 w-6 text-primary" />, date: "2018 - 2022", title: "Bachelor of Design", description: "Graduated from the National Institute of Design, specializing in Interaction Design." },
+    { icon: <Trophy className="h-6 w-6 text-primary" />, date: "Jan 2025 - Present", title: "Lead Organizer, Code For Bharat", description: "Organized and led a national-level hackathon with over 10,000 participants across India." },
+    { icon: <Users className="h-6 w-6 text-primary" />, date: "Sep 2024 - Present", title: "Algo Club Manager", description: "Expanded a coding community from 0 to over 500 active members through peer-learning initiatives." },
+    { icon: <Star className="h-6 w-6 text-primary" />, date: "Dec 2024 - Present", title: "Co-Founder, TechMasters Community", description: "Leading initiatives in design, content, and technical operations for community growth and engagement." },
+    { icon: <BookOpen className="h-6 w-6 text-primary" />, date: "2023 - 2026", title: "Bachelor of Computer Applications", description: "Pursuing a BCA from the University of Engineering and Management, Jaipur." },
 ];
 
 export default function AchievementsSection() {

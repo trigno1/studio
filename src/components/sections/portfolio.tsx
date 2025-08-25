@@ -9,15 +9,15 @@ import { Badge } from '../ui/badge';
 import { ExternalLink } from 'lucide-react';
 
 const portfolioItems = [
-    { id: 1, title: 'F1 Telemetry Dashboard', category: 'UI/UX', image: 'https://placehold.co/600x400.png', hint: 'racing dashboard', description: 'A conceptual F1-style dashboard designed for real-time race telemetry analysis. Built with Next.js and focused on data visualization and a high-performance user interface.', tags: ['Figma', 'Next.js', 'Vercel'] },
-    { id: 2, title: 'CryptoDash', category: 'Blockchain', image: 'https://placehold.co/600x400.png', hint: 'crypto interface', description: 'A decentralized finance dashboard for tracking crypto assets and interacting with smart contracts. Features a clean interface and robust security.', tags: ['Solidity', 'React', 'Ethers.js'] },
-    { id: 3, title: 'Aero Dynamics', category: 'Design', image: 'https://placehold.co/600x400.png', hint: 'abstract shapes', description: 'A series of 3D renders exploring the principles of aerodynamics through abstract visual design. Created using Blender and Photoshop.', tags: ['Blender', 'Photoshop'] },
+    { id: 1, title: 'Multi-Chain NFT Claiming System', category: 'Blockchain', image: 'https://placehold.co/600x400.png', hint: 'blockchain network', description: 'Developing a decentralized application (DApp) for secure NFT claims across Ethereum and Polygon. Implemented authentication with OAuth, crypto wallets, and QR-based transfers for seamless UX.', tags: ['ThirdWeb', 'Solidity', 'Node.js', 'MongoDB'] },
+    { id: 2, title: 'Smart Resume Analyzer with ATS Grading', category: 'AI/ML', image: 'https://placehold.co/600x400.png', hint: 'resume document', description: 'Developing an application that evaluates resumes using ATS algorithms and provides optimization feedback. Implemented keyword extraction, scoring system, and recommendation engine to enhance ATS compatibility.', tags: ['Python', 'NLP', 'Machine Learning'] },
+    { id: 3, title: 'F1 Telemetry Dashboard', category: 'UI/UX', image: 'https://placehold.co/600x400.png', hint: 'racing dashboard', description: 'A conceptual F1-style dashboard designed for real-time race telemetry analysis. Built with Next.js and focused on data visualization and a high-performance user interface.', tags: ['Figma', 'Next.js', 'Vercel'] },
     { id: 4, title: 'F1 Community Hub', category: 'Community', image: 'https://placehold.co/600x400.png', hint: 'social media', description: 'Developed and managed a Discord community for Formula 1 enthusiasts, growing it to over 5,000 active members through engaging content and events.', tags: ['Discord', 'Community Management'] },
-    { id: 5, title: 'Racing Lines Blog', category: 'Content', image: 'https://placehold.co/600x400.png', hint: 'blog article', description: 'A content series breaking down complex topics in motorsport technology for a general audience. Focused on SEO and long-form technical writing.', tags: ['Writing', 'SEO'] },
-    { id: 6, title: 'Web3 Wallet App', category: 'Blockchain', image: 'https://placehold.co/600x400.png', hint: 'digital wallet', description: 'A secure mobile wallet for managing digital assets on the Ethereum blockchain. Designed with a user-first approach for both new and experienced crypto users.', tags: ['React Native', 'Web3'] },
+    { id: 5, title: 'Aero Dynamics', category: 'Design', image: 'https://placehold.co/600x400.png', hint: 'abstract shapes', description: 'A series of 3D renders exploring the principles of aerodynamics through abstract visual design. Created using Blender and Photoshop.', tags: ['Blender', 'Photoshop'] },
+    { id: 6, title: 'Racing Lines Blog', category: 'Content', image: 'https://placehold.co/600x400.png', hint: 'blog article', description: 'A content series breaking down complex topics in motorsport technology for a general audience. Focused on SEO and long-form technical writing.', tags: ['Writing', 'SEO'] },
 ];
 
-const categories = ['All', 'UI/UX', 'Blockchain', 'Design', 'Community', 'Content'];
+const categories = ['All', 'Blockchain', 'AI/ML', 'UI/UX', 'Community', 'Design', 'Content'];
 
 export default function PortfolioSection() {
     const [filter, setFilter] = useState('All');

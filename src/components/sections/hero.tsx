@@ -23,8 +23,8 @@ export default function HeroSection() {
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter">
                 <span className="text-primary">Tanish</span> Sunita Pareek
             </h1>
-            <p className="mt-4 text-lg md:text-xl max-w-2xl text-foreground/80">
-                A design-driven developer crafting high-performance digital experiences at the intersection of UI/UX, Blockchain, and community building.
+            <p className="mt-4 text-lg md:text-xl max-w-3xl text-foreground/80">
+                Versatile professional skilled in graphic design, UI/UX, blockchain, and community management. Experienced in leading hackathons, managing coding clubs, and delivering impactful visuals.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Button size="lg" asChild>

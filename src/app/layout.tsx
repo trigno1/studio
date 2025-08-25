@@ -5,7 +5,7 @@ import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
   title: 'Tanish Sunita Pareek | Portfolio',
-  description: 'Sleek Formula 1–themed personal portfolio for Tanish Sunita Pareek, showcasing projects in UI/UX, Blockchain, Design, and more.',
+  description: 'Versatile professional skilled in graphic design, UI/UX, blockchain, and community management. Explore the portfolio of Tanish Sunita Pareek.',
 };
 
 export default function RootLayout({

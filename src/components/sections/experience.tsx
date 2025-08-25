@@ -5,22 +5,28 @@ import { Briefcase } from 'lucide-react';
 
 const experiences = [
     {
-        role: "UI/UX Designer",
-        company: "Google",
-        period: "May 2023 - Present",
-        description: "Leading design on key features for a flagship product, focusing on user-centric design principles and collaborating with cross-functional teams to deliver intuitive and engaging experiences."
+        role: "Blockchain Developer",
+        company: "tecXaro",
+        period: "Mar 2024 - Present",
+        description: "Promoted within 4 months for contributions to blockchain projects enhancing smart contract security and efficiency. Supported content team by drafting MoUs, documentation, and professional presentations."
     },
     {
-        role: "Product Designer",
-        company: "Meta",
-        period: "Jan 2022 - Apr 2023",
-        description: "Worked on the core user experience for a major social platform, contributing to features used by millions daily. Specialized in mobile-first design and rapid prototyping."
+        role: "Lead Organizer",
+        company: "Code For Bharat Hackathon",
+        period: "Jan 2025 - Present",
+        description: "Organized and led a national-level hackathon with 10,000+ participants. Directed end-to-end event management, sponsor relations, mentor coordination, branding, and community management."
     },
     {
-        role: "Design Intern",
-        company: "Sketch",
-        period: "May 2021 - Aug 2021",
-        description: "Assisted the core design team with UI asset creation, user research, and competitive analysis. Contributed to the design system and helped streamline the design workflow."
+        role: "Co-Founder",
+        company: "TechMasters Community",
+        period: "Dec 2024 - Present",
+        description: "Lead initiatives in design, content, and technical operations. Created digital assets for workshops and hackathons, collaborating with tech and content teams for impactful communication."
+    },
+    {
+        role: "Club Manager",
+        company: "Algo Club",
+        period: "Sep 2024 - Present",
+        description: "Expanded coding community from 0 to 500+ active members through peer-learning initiatives. Organized 10+ technical workshops and coding challenges with industry mentors."
     }
 ];
 
@@ -35,8 +41,8 @@ export default function ExperienceSection() {
             transition={{ duration: 0.8 }}
         >
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl md:text-5xl font-bold text-center">Work Experience</h2>
-                <p className="mt-4 text-lg text-center text-foreground/70 max-w-2xl mx-auto">My professional journey and roles I've held.</p>
+                <h2 className="text-3xl md:text-5xl font-bold text-center">Leadership & Experience</h2>
+                <p className="mt-4 text-lg text-center text-foreground/70 max-w-2xl mx-auto">My professional journey and community involvement.</p>
 
                 <div className="mt-16 grid gap-8 md:grid-cols-1 max-w-3xl mx-auto">
                     {experiences.map((exp, index) => (

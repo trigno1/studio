@@ -54,7 +54,7 @@ export default function ContactSection() {
                                 <FormItem><FormLabel>Name</FormLabel><FormControl><Input placeholder="Tanish Pareek" {...field} /></FormControl><FormMessage /></FormItem>
                             )} />
                             <FormField control={form.control} name="email" render={({ field }) => (
-                                <FormItem><FormLabel>Email</FormLabel><FormControl><Input type="email" placeholder="tanish@example.com" {...field} /></FormControl><FormMessage /></FormItem>
+                                <FormItem><FormLabel>Email</FormLabel><FormControl><Input type="email" placeholder="tanishpareek2005@gmail.com" {...field} /></FormControl><FormMessage /></FormItem>
                             )} />
                             <FormField control={form.control} name="message" render={({ field }) => (
                                 <FormItem><FormLabel>Message</FormLabel><FormControl><Textarea placeholder="Let's build something amazing together..." {...field} rows={5} /></FormControl><FormMessage /></FormItem>
@@ -63,9 +63,8 @@ export default function ContactSection() {
                         </form>
                     </Form>
                     <div className="mt-12 flex justify-center space-x-6">
-                        <a href="#" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Twitter className="h-6 w-6" /></a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Github className="h-6 w-6" /></a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin className="h-6 w-6" /></a>
+                        <a href="https://linkedin.com/in/tanish-sunita-pareek" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin className="h-6 w-6" /></a>
+                        <a href="https://github.com/trigno1" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Github className="h-6 w-6" /></a>
                     </div>
                 </div>
             </div>
