@@ -85,6 +85,3 @@ npm install npm@latest -g
 ⭐ If you like this project, don’t forget to **star the repo** and share feedback!
 
 ```
-
-Would you like me to also design a **badge-style header section** (with GitHub stars, LinkedIn, Portfolio link badges at the top) to make it look even more professional?
-```
