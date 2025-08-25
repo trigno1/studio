@@ -5,18 +5,23 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import { Download, ChevronsRight } from 'lucide-react';
+import { Menu } from 'lucide-react';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 const navItems = [
   { name: 'Home', href: '#home' },
+  { name: 'About', href: '#about' },
   { name: 'Experience', href: '#experience' },
   { name: 'Portfolio', href: '#portfolio' },
   { name: 'Education', href: '#education' },
+  { name: 'Resume', href: '#resume' },
+  { name: 'Blog', href: '#blog' },
 ];
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,6 +43,8 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   return (
     <motion.header
@@ -72,18 +79,31 @@ export default function Header() {
           </Link>
         ))}
       </nav>
-      <div className="flex items-center space-x-2">
-        <Button asChild className="group overflow-hidden relative">
-          <a href="/Tanish_Sunita_Pareek_CV.pdf" download>
-            <span className="flex items-center transition-transform duration-300 group-hover:-translate-x-3">
-              <Download className="h-4 w-4 mr-2" />
-              Download CV
-            </span>
-            <span className="absolute right-0 flex items-center pr-2 translate-x-10 group-hover:translate-x-0 transition-transform duration-300">
-                <ChevronsRight className="h-5 w-5" />
-            </span>
-          </a>
-        </Button>
+      <div className="md:hidden">
+        <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+          <SheetTrigger asChild>
+            <Button variant="ghost" size="icon">
+              <Menu className="h-6 w-6" />
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="right">
+            <nav className="flex flex-col space-y-4 pt-8">
+              {navItems.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className={cn(
+                    'text-lg font-medium transition-colors hover:text-primary',
+                    activeSection === item.href.substring(1) ? 'text-primary' : 'text-foreground/80'
+                  )}
+                  onClick={closeMobileMenu}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </nav>
+          </SheetContent>
+        </Sheet>
       </div>
     </motion.header>
   );

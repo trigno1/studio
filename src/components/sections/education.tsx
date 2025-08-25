@@ -24,7 +24,7 @@ export default function EducationSection() {
                 <h2 className="text-3xl md:text-5xl font-bold text-center">Education</h2>
                 
                 <div className="relative mt-16 max-w-xl mx-auto">
-                    <Card className="w-full text-left">
+                    <Card className="w-full text-left bg-card/50 backdrop-blur-sm">
                         <CardHeader>
                             <div className="flex items-center gap-4">
                                 <div className="p-2 bg-primary/10 rounded-full">{education.icon}</div>
