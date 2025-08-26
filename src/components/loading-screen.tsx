@@ -41,7 +41,7 @@ export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
             exit={{ opacity: 0, transition: { duration: 0.5 } }}
         >
             <Terminal 
-                className="w-full max-w-2xl h-72"
+                className="w-full max-w-2xl h-96"
                 textClassName="text-sm md:text-base"
             >
                 {step >= 1 && <TypingAnimation text="> Hey! Simon Riley are you ready" />}
