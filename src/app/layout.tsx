@@ -9,6 +9,7 @@ import Galaxy from '@/components/galaxy';
 import { useState, useEffect } from 'react';
 import LoadingScreen from '@/components/loading-screen';
 import { AnimatePresence } from 'framer-motion';
+import { SmoothCursor } from '@/components/magicui/smooth-cursor';
 
 const metadata: Metadata = {
   title: 'Tanish Sunita Pareek | Portfolio',
@@ -32,6 +33,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased">
+        <SmoothCursor />
         <AnimatePresence>
           {loading && <LoadingScreen onFinish={() => setLoading(false)} />}
         </AnimatePresence>

@@ -41,6 +41,7 @@
   }
   body {
     @apply bg-transparent text-foreground;
+    cursor: none !important;
   }
 }
 
