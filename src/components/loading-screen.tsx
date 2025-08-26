@@ -39,10 +39,10 @@ export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
         <motion.div
             className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-background p-4"
             initial={{ opacity: 1 }}
-            exit={{ opacity: 0, transition: { duration: 0.5, delay: 0.5 } }} // Add a delay before fading out
+            exit={{ opacity: 0, transition: { duration: 0.5, delay: 1.5 } }} // Delay exit to allow flash to complete
         >
             <Terminal 
-                className="w-full max-w-2xl h-[28rem]"
+                className="w-full max-w-2xl h-[30rem]"
                 textClassName="text-sm md:text-base"
             >
                 {step >= 1 && <TypingAnimation text="> Hey! Simon Riley are you ready" />}
@@ -58,7 +58,7 @@ export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
                 {step >= 11 && <TypingAnimation className="text-red-500" text="0 🚀 Liftoff!" />}
             </Terminal>
             {showFlash && (
-                <div className="absolute inset-0 z-[101] bg-white animate-flash" />
+                <div className="absolute inset-0 z-[101] animate-flash" />
             )}
         </motion.div>
     );
