@@ -10,6 +10,7 @@ import { useState, useEffect } from 'react';
 import LoadingScreen from '@/components/loading-screen';
 import { AnimatePresence } from 'framer-motion';
 import { SmoothCursor } from '@/components/magicui/smooth-cursor';
+import { Analytics } from "@vercel/analytics/react"
 
 const metadata: Metadata = {
   title: 'Tanish Sunita Pareek | Portfolio',
@@ -56,6 +57,7 @@ export default function RootLayout({
               forcedTheme="dark"
             >
               {children}
+              <Analytics />
               <Toaster />
             </ThemeProvider>
           </>
