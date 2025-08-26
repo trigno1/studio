@@ -22,7 +22,7 @@ export default function Footer() {
                     <p className="text-lg md:text-xl italic text-foreground/90 animate-glow">
                         &ldquo;I have stumbled, I have soared, I have created, and I have led. With every challenge, I carry the fire of resilience and the courage of vision.
                         <br />
-                        I am <span className="primary-gradient-text not-italic font-semibold">Tanish Sunita Pareek</span> — and still, I rise.&rdquo;
+                        I am <span className="primary-gradient-text not-italic font-semibold">Tanish Sunita Pareek</span> — Still I Rise!&rdquo;
                     </p>
                 </blockquote>
 
