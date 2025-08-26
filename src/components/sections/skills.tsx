@@ -1,3 +1,4 @@
+
 'use client';
 import { motion } from 'framer-motion';
 import { LogoLoop } from '@/components/logo-loop';
@@ -49,8 +50,6 @@ export default function SkillsSection() {
             gap={60}
             pauseOnHover
             scaleOnHover
-            fadeOut
-            fadeOutColor="hsl(var(--background))"
             ariaLabel="Technology partners"
           />
         </div>
