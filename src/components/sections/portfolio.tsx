@@ -11,6 +11,8 @@ const portfolioItems = [
     { id: 1, title: 'Multi-Chain NFT Claiming System', category: 'Blockchain', image: '/nft-claim.png', hint: 'blockchain network', description: 'Developing a decentralized application (DApp) for secure NFT claims across Ethereum and Polygon. Implemented authentication with OAuth, crypto wallets, and QR-based transfers for seamless UX.', tags: ['ThirdWeb', 'Solidity', 'Node.js', 'MongoDB'] },
     { id: 2, title: 'Smart Resume Analyzer with ATS Grading', category: 'AI/ML', image: '/resume-analyzer.png', hint: 'resume document analysis', description: 'Developing an application that evaluates resumes using ATS algorithms and provides optimization feedback. Implemented keyword extraction, scoring system, and recommendation engine to enhance ATS compatibility.', tags: ['Python', 'NLP', 'Machine Learning'] },
     { id: 3, title: 'Jethia Crypto Coin', category: 'Blockchain', image: '/jethia-coin.png', hint: 'crypto coin', description: 'Launched a community-driven cryptocurrency, Jethia Coin. Managed the tokenomics, smart contract development on the Binance Smart Chain, and community engagement initiatives.', tags: ['Binance Smart Chain', 'Solidity', 'Community Management', 'Tokenomics'] },
+    { id: 4, title: 'Code For Bharat Season 2', category: 'Hackathon', image: '/cfb2.png', hint: 'flagship hackathon', description: 'Organized Code For Bharat: Season 2, a nationwide hackathon bringing together 10,000+ innovators from 1,000+ colleges and 2800+ universities across India. Focused on solving real-world challenges with technology.', tags: ['Hackathon', 'Innovation', 'Community', 'India'] },
+
 ];
 
 export default function PortfolioSection() {
