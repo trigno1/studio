@@ -10,7 +10,7 @@ export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
     const [showFlash, setShowFlash] = useState(false);
     const [startShake, setStartShake] = useState(false);
 
-    const totalDuration = 11000;
+    const totalDuration = 11500; // Increased duration for the new step
 
     useEffect(() => {
         const timers = [
@@ -24,7 +24,8 @@ export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
             setTimeout(() => setStep(8), 9500), // 3
             setTimeout(() => setStep(9), 10000), // 2
             setTimeout(() => setStep(10), 10500), // 1
-            setTimeout(() => setStep(11), 11000), // 0 🚀 Liftoff!
+            setTimeout(() => setStep(11), 11000), // 0 🚀
+            setTimeout(() => setStep(12), 11500), // Liftoff!
             setTimeout(() => {
                 setShowFlash(true);
                 setStartShake(true);
@@ -56,7 +57,8 @@ export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
                 {step >= 8 && <TypingAnimation className="text-red-500" text="3" />}
                 {step >= 9 && <TypingAnimation className="text-red-500" text="2" />}
                 {step >= 10 && <TypingAnimation className="text-red-500" text="1" />}
-                {step >= 11 && <TypingAnimation className="text-red-500" text="0 🚀 Liftoff!" />}
+                {step >= 11 && <TypingAnimation className="text-red-500" text="0 🚀" />}
+                {step >= 12 && <TypingAnimation className="text-green-400" text="Liftoff!" />}
             </Terminal>
             {showFlash && (
                 <div className="absolute inset-0 z-[101] animate-flash" />

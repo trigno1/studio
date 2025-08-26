@@ -10,12 +10,6 @@ export default function Footer() {
                     Connect with me to explore more in web3 community and technology.
                 </p>
 
-                <blockquote className="mt-8 max-w-3xl mx-auto">
-                    <p className="text-lg md:text-xl italic text-foreground/90 animate-glow">
-                        &ldquo;I have stumbled, I have soared, I have created, and I have led. With every challenge, I carry the fire of resilience and the courage of vision. I am Tanish Sunita Pareek — and still, I rise.&rdquo;
-                    </p>
-                </blockquote>
-
                 <div className="mt-8 flex justify-center space-x-6">
                     <a href="https://github.com/trigno1" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Github className="h-6 w-6" /></a>
                     <a href="https://www.linkedin.com/in/tanish-sunita-pareek/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin className="h-6 w-6" /></a>
@@ -30,6 +24,12 @@ export default function Footer() {
                         <p>Designed & Built with ❤️ and 🏎️</p>
                     </div>
                 </div>
+
+                <blockquote className="mt-8 max-w-3xl mx-auto">
+                    <p className="text-lg md:text-xl italic text-foreground/90 animate-glow">
+                        &ldquo;I have stumbled, I have soared, I have created, and I have led. With every challenge, I carry the fire of resilience and the courage of vision. I am <span className="primary-gradient-text not-italic font-semibold">Tanish Sunita Pareek</span> — and still, I rise.&rdquo;
+                    </p>
+                </blockquote>
             </div>
         </footer>
     );
