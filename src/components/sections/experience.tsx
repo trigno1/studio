@@ -10,35 +10,35 @@ const experiences = [
         date: "Dec 2024 - Present", 
         title: "Co-Founder", 
         company: "TechMasters Community", 
-        description: "Spearheaded design, content, and technical operations to scale a fast-growing tech community. Designed branding, led growth strategy, and managed recruitment to deliver impactful learning experiences." 
+        description: "As a co-founder, I spearhead design, content, and technical operations to scale our fast-growing tech community. I design branding and digital assets for workshops and hackathons, collaborate with teams to deliver impactful learning experiences, and lead our community growth strategy through partnerships and outreach. I also manage content operations and recruitment, successfully mentoring new team members." 
     },
     { 
         icon: <Trophy className="h-6 w-6 text-primary" />, 
         date: "Jan 2025 - Present", 
         title: "Lead Organizer", 
         company: "Code For Bharat S1 & S2", 
-        description: "Organized and scaled a national hackathon from 1,500+ participants in S1 to over 10,500+ in S2. Directed technical operations, content creation, and graphic design to foster community growth and innovation." 
+        description: "I led the organization of two large-scale national hackathons. In Season 1, we achieved over 1,500 registrations and 130+ project submissions. For Season 2, we scaled to over 10,500 registrations from thousands of colleges nationwide. I directed technical operations, content creation, and graphic design while developing problem statements and digital assets to communicate our vision. My role involved collaborating with cross-functional teams to strengthen branding and foster community growth." 
     },
     { 
         icon: <Briefcase className="h-6 w-6 text-primary" />, 
         date: "Mar 2024 - Present", 
         title: "Blockchain Developer", 
         company: "tecXaro", 
-        description: "Promoted within 4 months for contributions to smart contract security and scalability on Ethereum & BSC. Authored technical documentation and investor decks to align business and technical strategies." 
+        description: "I was promoted within four months for my key contributions to smart contract security, gas optimization, and scalability. I develop and review blockchain solutions on Ethereum and BSC to ensure reliability and performance. Additionally, I author technical documentation, MoUs, and investor decks to align our business and technical strategies." 
     },
     { 
         icon: <Users className="h-6 w-6 text-primary" />, 
         date: "Sep 2024 - Present", 
         title: "Club Manager", 
         company: "Algo Club", 
-        description: "Expanded a coding community from 0 to 500+ members by organizing 10+ workshops and mentorship sessions. Built a structured content pipeline to sustain long-term community growth." 
+        description: "I expanded our coding community from the ground up to over 500 active members by creating peer-learning programs and tech talks. I organized more than 10 workshops, coding challenges, and mentorship sessions with industry professionals. A key part of my role was building a structured content and event pipeline to ensure the long-term, sustainable growth of our community." 
     },
     { 
         icon: <GitFork className="h-6 w-6 text-primary" />, 
         date: "Summer 2024", 
         title: "Contributor", 
         company: "GSSoC 2024", 
-        description: "Contributed to multiple open-source projects, enhancing code quality and implementing new features. Collaborated with distributed teams to resolve issues, write documentation, and improve scalability." 
+        description: "During the GirlScript Summer of Code, I contributed to multiple open-source projects, focusing on enhancing code quality and implementing new features. This involved collaborating with distributed teams to resolve issues, write clean and thorough documentation, and improve the overall scalability of the projects." 
     },
 ];
 
@@ -75,7 +75,7 @@ export default function ExperienceSection() {
                                         </div>
                                     </CardHeader>
                                     <CardContent>
-                                        <p>{item.description}</p>
+                                        <p className="text-justify">{item.description}</p>
                                     </CardContent>
                                 </Card>
                             </div>
