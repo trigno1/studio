@@ -14,7 +14,7 @@ export default function EducationSection() {
     return (
         <motion.section 
             id="education" 
-            className="w-full py-20 lg:py-32"
+            className="w-full pt-20 lg:pt-32 pb-10 lg:pb-16"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
