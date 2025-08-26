@@ -1,3 +1,4 @@
+
 'use client';
 
 import Image from 'next/image';
@@ -17,7 +18,7 @@ export default function CVPage() {
                 <div className="flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
                     <h1 className="text-3xl md:text-4xl font-bold">My Curriculum Vitae</h1>
                     <Button asChild size="lg">
-                        <a href="/(2).pdf" download>
+                        <a href="/Tanish_Sunita_Pareek_CV.pdf" download>
                             <Download className="mr-2 h-5 w-5" />
                             Download PDF Version
                         </a>

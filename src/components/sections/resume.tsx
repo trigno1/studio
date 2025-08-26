@@ -1,3 +1,4 @@
+
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -31,7 +32,7 @@ export default function ResumeSection() {
                     </div>
                     <div className="mt-8 text-center">
                         <Button asChild size="lg">
-                            <a href="/(2).pdf" download>
+                            <a href="/Tanish_Sunita_Pareek_CV.pdf" download>
                                 <Download className="mr-2 h-5 w-5" />
                                 Download PDF Version
                             </a>
