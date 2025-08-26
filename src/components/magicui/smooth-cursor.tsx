@@ -5,7 +5,7 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useEffect } from "react";
 
 export function SmoothCursor() {
-  const cursorSize = 20;
+  const cursorSize = 25;
 
   const mouse = {
     x: useMotionValue(0),
