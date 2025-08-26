@@ -66,8 +66,10 @@ export default function BlogSection() {
                     Here are some of my thoughts on technology, design, and community building.
                 </p>
             </div>
-            <div className="mt-8">
-                <Carousel items={cards} />
+            <div className="mt-8 flex justify-center">
+                <div className="w-full max-w-6xl">
+                    <Carousel items={cards} />
+                </div>
             </div>
         </motion.section>
     );
