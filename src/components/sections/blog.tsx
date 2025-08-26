@@ -11,7 +11,7 @@ const blogPosts = [
         src: '/digital-agreements.png',
         title: 'Smart Contracts: Simplifying Digital Agreements',
         category: 'Technology',
-        url: '#',
+        url: 'https://www.linkedin.com/pulse/smart-contracts-simplifying-digital-agreements-tanish-sunita-pareek-hcnoc',
         hint: 'digital contract signature',
     },
     {
@@ -25,7 +25,7 @@ const blogPosts = [
         src: '/blockchain-elections.png',
         title: 'Blockchain: Is It the Solution for Secure and Transparent Elections?',
         category: 'Blockchain',
-        url: '#',
+        url: 'https://www.linkedin.com/pulse/blockchain-solution-secure-transparent-elections-tanish-sunita-pareek-cbmsc',
         hint: 'secure voting blockchain',
     },
 ];
