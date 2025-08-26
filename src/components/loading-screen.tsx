@@ -8,8 +8,9 @@ import { motion } from 'framer-motion';
 export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
     const [step, setStep] = useState(0);
     const [showFlash, setShowFlash] = useState(false);
+    const [startShake, setStartShake] = useState(false);
 
-    const totalDuration = 11000; // Total estimated time for all typing animations
+    const totalDuration = 11000;
 
     useEffect(() => {
         const timers = [
@@ -26,7 +27,7 @@ export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
             setTimeout(() => setStep(11), 11000), // 0 🚀 Liftoff!
             setTimeout(() => {
                 setShowFlash(true);
-                // Call onFinish immediately when the flash starts
+                setStartShake(true);
                 onFinish(); 
             }, totalDuration + 500)
         ];
@@ -37,9 +38,9 @@ export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
 
     return (
         <motion.div
-            className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-background p-4"
+            className={`fixed inset-0 z-[100] flex flex-col items-center justify-center bg-background p-4 ${startShake ? 'animate-shake' : ''}`}
             initial={{ opacity: 1 }}
-            exit={{ opacity: 0, transition: { duration: 0.5, delay: 1.5 } }} // Delay exit to allow flash to complete
+            exit={{ opacity: 0, transition: { duration: 0.5, delay: 1.5 } }}
         >
             <Terminal 
                 className="w-full max-w-2xl h-[30rem]"
