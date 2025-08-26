@@ -1,44 +1,53 @@
 'use client';
 import { motion } from 'framer-motion';
-import { Carousel, Card as CarouselCard } from '@/components/ui/expandable-carousel';
+import { Carousel, Card as CarouselCard, BlurImage } from '@/components/ui/expandable-carousel';
+import { Badge } from '@/components/ui/badge';
+import Link from 'next/link';
+import { Card, CardContent, CardTitle } from '@/components/ui/card';
 
 const blogPosts = [
     {
-        src: 'https://picsum.photos/1277/720',
+        src: 'https://picsum.photos/1280/720',
         title: 'My Journey into Web3 and Blockchain',
         category: 'Technology',
-        content: () => <div>This is a blog post about Web3.</div>,
         url: '#',
+        hint: 'blockchain technology',
     },
     {
-        src: 'https://picsum.photos/1277/720',
+        src: 'https://picsum.photos/1280/720',
         title: 'The Art of Community Building',
         category: 'Community',
-        content: () => <div>Tips on building a great community.</div>,
         url: '#',
+        hint: 'people collaborating',
     },
     {
-        src: 'https://picsum.photos/1277/720',
+        src: 'https://picsum.photos/1280/720',
         title: 'UI/UX Principles for Developers',
         category: 'Design',
-        content: () => <div>Design principles for developers.</div>,
         url: '#',
+        hint: 'design wireframe',
     },
 ];
 
 export default function BlogSection() {
     const cards = blogPosts.map((post, index) => (
-        <a href={post.url} key={index} target="_blank" rel="noopener noreferrer">
-             <CarouselCard
-                card={{
-                    src: post.src,
-                    title: post.title,
-                    category: post.category,
-                    content: post.content,
-                }}
-                index={index}
-            />
-        </a>
+        <Link href={post.url} key={index} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+            <Card className="group overflow-hidden cursor-pointer h-full flex flex-col shadow-lg hover:shadow-primary/30 transition-shadow w-full">
+                <div className="overflow-hidden aspect-video relative">
+                    <BlurImage 
+                        src={post.src}
+                        alt={post.title} 
+                        data-ai-hint={post.hint} 
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                </div>
+                <CardContent className="p-6 flex-grow flex flex-col">
+                    <Badge variant="outline" className="mb-2 self-start">{post.category}</Badge>
+                    <CardTitle className="text-xl">{post.title}</CardTitle>
+                </CardContent>
+            </Card>
+        </Link>
     ));
 
     return (

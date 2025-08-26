@@ -128,7 +128,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                   },
                 }}
                 key={"card" + index}
-                className="last:pr-4"
+                className="last:pr-4 w-56 md:w-96 flex-shrink-0"
               >
                 {item}
               </motion.div>
