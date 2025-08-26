@@ -1,13 +1,14 @@
 'use client';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Briefcase, Users, Star, Trophy } from "lucide-react";
+import { Briefcase, Users, Star, Trophy, GitFork } from "lucide-react";
 import { motion } from "framer-motion";
 
 const experiences = [
-    { icon: <Briefcase className="h-6 w-6 text-primary" />, date: "Mar 2024 - Present", title: "Blockchain Developer", company: "tecXaro", description: "Promoted within 4 months for contributions to blockchain projects enhancing smart contract security and efficiency. Supported content team by drafting MoUs, documentation, and professional presentations." },
-    { icon: <Trophy className="h-6 w-6 text-primary" />, date: "Jan 2025 - Present", title: "Lead Organizer", company: "Code For Bharat Hackathon", description: "Organized and led a national-level hackathon with 10,000+ participants. Directed end-to-end event management, sponsor relations, mentor coordination, branding, and community management." },
     { icon: <Star className="h-6 w-6 text-primary" />, date: "Dec 2024 - Present", title: "Co-Founder", company: "TechMasters Community", description: "Lead initiatives in design, content, and technical operations. Created digital assets for workshops and hackathons, collaborating with tech and content teams for impactful communication." },
+    { icon: <Trophy className="h-6 w-6 text-primary" />, date: "Jan 2025 - Present", title: "Lead Organizer", company: "Code For Bharat S1 & S2", description: "Organized and led a national-level hackathon with 10,000+ participants. Directed end-to-end event management, sponsor relations, mentor coordination, branding, and community management for two successful seasons." },
+    { icon: <Briefcase className="h-6 w-6 text-primary" />, date: "Mar 2024 - Present", title: "Blockchain Developer", company: "tecXaro", description: "Promoted within 4 months for contributions to blockchain projects enhancing smart contract security and efficiency. Supported content team by drafting MoUs, documentation, and professional presentations." },
     { icon: <Users className="h-6 w-6 text-primary" />, date: "Sep 2024 - Present", title: "Club Manager", company: "Algo Club", description: "Expanded coding community from 0 to 500+ active members through peer-learning initiatives. Organized 10+ technical workshops and coding challenges with industry mentors." },
+    { icon: <GitFork className="h-6 w-6 text-primary" />, date: "Summer 2024", title: "Contributor", company: "GSSoC 2024", description: "Contributed to various open-source projects during Google Summer of Code 2024, focusing on code quality, feature development, and collaborative software engineering." },
 ];
 
 export default function ExperienceSection() {
