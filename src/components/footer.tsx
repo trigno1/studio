@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="container mx-auto px-4 py-12 text-center">
                 <h3 className="text-2xl font-bold">Connect with me</h3>
                 <p className="mt-2 text-muted-foreground max-w-xl mx-auto">
-                    Connect with me to explore more in web3 community and technology.
+                    Connect with me to collaborate on Web3, community growth, and impactful tech initiatives.
                 </p>
 
                 <div className="mt-8 flex justify-center space-x-6">
