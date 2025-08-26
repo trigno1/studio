@@ -1,35 +1,35 @@
 
 'use client';
 
-import { Terminal, TypingAnimation } from '@/components/magicui/terminal';
+import { Terminal, AnimatedSpan, TypingAnimation } from '@/components/magicui/terminal';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Button } from './ui/button';
-
-const loadingPhrases = [
-    "Hey! Simon Riley are you ready",
-    "Checking launch list",
-    "Vehicle Systems check",
-    "Launchpad and Range Operations check",
-    "Launch Control Center ready",
-    "Crew Status ready",
-    "Countdown",
-    "3",
-    "2",
-    "1",
-    "0 🚀 Liftoff!"
-];
 
 export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
-    const [finished, setFinished] = useState(false);
-    
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setFinished(true);
-            setTimeout(onFinish, 750); // Wait a bit after animation finishes
-        }, (loadingPhrases.length + 1) * 1000); // Approximate duration based on phrases
+    const [step, setStep] = useState(0);
+    const [showFlash, setShowFlash] = useState(false);
 
-        return () => clearTimeout(timer);
+    const totalDuration = 11000; // Total estimated time for all typing animations
+
+    useEffect(() => {
+        const timers = [
+            setTimeout(() => setStep(1), 1000),
+            setTimeout(() => setStep(2), 2000),
+            setTimeout(() => setStep(3), 3000),
+            setTimeout(() => setStep(4), 5000),
+            setTimeout(() => setStep(5), 7000),
+            setTimeout(() => setStep(6), 9000),
+            setTimeout(() => setStep(7), 9500),
+            setTimeout(() => setStep(8), 10000),
+            setTimeout(() => setStep(9), 10500),
+            setTimeout(() => setStep(10), 11000),
+            setTimeout(() => {
+                setShowFlash(true);
+                setTimeout(onFinish, 1500); // Flash duration
+            }, totalDuration + 500)
+        ];
+
+        return () => timers.forEach(clearTimeout);
     }, [onFinish]);
 
 
@@ -43,20 +43,21 @@ export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
                 className="w-full max-w-2xl h-auto"
                 textClassName="text-sm md:text-base"
             >
-                <TypingAnimation
-                    className="text-white"
-                    text={loadingPhrases}
-                    duration={100}
-                />
+                {step >= 0 && <TypingAnimation text="> Hey! Simon Riley are you ready" />}
+                {step >= 1 && <AnimatedSpan className="text-green-500">✔ Checking launch list</AnimatedSpan>}
+                {step >= 2 && <AnimatedSpan className="text-green-500">✔ Vehicle Systems check</AnimatedSpan>}
+                {step >= 3 && <AnimatedSpan className="text-green-500">✔ Launchpad and Range Operations check</AnimatedSpan>}
+                {step >= 4 && <AnimatedSpan className="text-green-500">✔ Launch Control Center ready</AnimatedSpan>}
+                {step >= 5 && <AnimatedSpan className="text-green-500">✔ Crew Status ready</AnimatedSpan>}
+                {step >= 6 && <TypingAnimation text="> Countdown" />}
+                {step >= 7 && <TypingAnimation className="text-red-500" text="3" />}
+                {step >= 8 && <TypingAnimation className="text-red-500" text="2" />}
+                {step >= 9 && <TypingAnimation className="text-red-500" text="1" />}
+                {step >= 10 && <TypingAnimation className="text-red-500" text="0 🚀 Liftoff!" />}
             </Terminal>
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0, transition: { delay: 1, duration: 0.5 } }}
-            >
-                <Button variant="ghost" onClick={onFinish} className="mt-8">
-                    Skip Intro
-                </Button>
-            </motion.div>
+            {showFlash && (
+                <div className="absolute inset-0 z-[101] bg-white animate-flash" />
+            )}
         </motion.div>
     );
 }

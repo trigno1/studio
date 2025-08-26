@@ -18,74 +18,53 @@ export const AnimatedSpan: FC<AnimatedSpanProps> = ({
   const isInView = useInView(ref, { once: true });
 
   return (
-    <span
+    <div
       ref={ref}
       style={{
-        transform: isInView ? "none" : "translateY(20px)",
+        transform: isInView ? "none" : "translateY(10px)",
         opacity: isInView ? 1 : 0,
-        transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+        transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s",
       }}
       className={className}
     >
       {children}
-    </span>
+    </div>
   );
 };
 
 interface TypingAnimationProps {
-  text: string | string[];
+  text: string;
   duration?: number;
   className?: string;
 }
 
 export const TypingAnimation: FC<TypingAnimationProps> = ({
   text,
-  duration = 200,
+  duration = 50,
   className,
 }) => {
   const [displayText, setDisplayText] = useState("");
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isTyping, setIsTyping] = useState(true);
 
   useEffect(() => {
-    if (Array.isArray(text)) {
-      if (currentIndex < text.length) {
-        const currentLine = text[currentIndex];
-        if (displayText.length < currentLine.length) {
-          const timeout = setTimeout(() => {
-            setDisplayText(currentLine.slice(0, displayText.length + 1));
-          }, duration);
-          return () => clearTimeout(timeout);
-        } else {
-          const lineBreakTimeout = setTimeout(() => {
-            setCurrentIndex(currentIndex + 1);
-            setDisplayText(""); // Reset for the next line
-          }, duration * 5); // Pause before starting next line
-          return () => clearTimeout(lineBreakTimeout);
-        }
-      }
+    if (!isTyping) return;
+    
+    if (displayText.length < text.length) {
+      const timeout = setTimeout(() => {
+        setDisplayText(text.slice(0, displayText.length + 1));
+      }, duration);
+      return () => clearTimeout(timeout);
     } else {
-      // Handle single string text
-      if (displayText.length < text.length) {
-        const timeout = setTimeout(() => {
-          setDisplayText(text.slice(0, displayText.length + 1));
-        }, duration);
-        return () => clearTimeout(timeout);
-      }
+        setIsTyping(false);
     }
-  }, [displayText, text, duration, currentIndex]);
+  }, [displayText, text, duration, isTyping]);
 
-  const displayedText = Array.isArray(text)
-    ? text.slice(0, currentIndex).map((line, index) => <div key={index}>{line}</div>)
-    : null;
 
   return (
-    <span className={cn("font-mono text-sm tracking-wider", className)}>
-      {Array.isArray(text) && displayedText}
-      <div>
+    <div className={cn("font-mono text-sm tracking-wider", className)}>
         {displayText}
-        <span className="animate-caret-blink inline-block h-4 w-2 translate-y-0.5 bg-white" />
-      </div>
-    </span>
+        {isTyping && <span className="animate-caret-blink inline-block h-4 w-2 translate-y-0.5 bg-white" />}
+    </div>
   );
 };
 
@@ -114,7 +93,7 @@ export const Terminal: FC<TerminalProps> = ({
       </div>
       <div
         className={cn(
-          "h-full overflow-y-auto font-mono text-sm",
+          "h-full overflow-y-auto font-mono text-sm space-y-2",
           textClassName,
         )}
       >
