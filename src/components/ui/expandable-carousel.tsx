@@ -98,17 +98,6 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
         >
           <div
             className={cn(
-              "absolute right-0 z-[10] h-full w-[5%] bg-gradient-to-l from-background to-transparent pointer-events-none"
-            )}
-          ></div>
-          <div
-            className={cn(
-              "absolute left-0 z-[10] h-full w-[5%] bg-gradient-to-r from-background to-transparent pointer-events-none"
-            )}
-          ></div>
-
-          <div
-            className={cn(
               "flex flex-row justify-start gap-4 pl-4"
             )}
           >
@@ -128,7 +117,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                   },
                 }}
                 key={"card" + index}
-                className="last:pr-4 w-56 md:w-96 flex-shrink-0"
+                className="last:pr-4 w-80 md:w-[480px] flex-shrink-0"
               >
                 {item}
               </motion.div>
