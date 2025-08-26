@@ -16,7 +16,7 @@ export default function HeroSection() {
                 <span className="primary-gradient-text">Tanish</span> Sunita Pareek
             </h1>
             <p className="mt-4 text-lg md:text-xl max-w-3xl text-foreground/80">
-                Versatile professional skilled in graphic design, UI/UX, blockchain, and community management. Experienced in leading hackathons, managing coding clubs, and delivering impactful visuals.
+                Blockchain and Web3 enthusiast, community builder, and creative designer — driving impact through technology, design, and collaboration
             </p>
         </div>
 
