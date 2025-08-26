@@ -30,7 +30,7 @@ export default function SkillsSection() {
   return (
     <motion.section
       id="skills"
-      className="w-full py-20 lg:py-32"
+      className="w-full pt-20 lg:pt-32 pb-10 lg:pb-16"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
@@ -46,7 +46,7 @@ export default function SkillsSection() {
             logos={techLogos}
             speed={80}
             direction="left"
-            logoHeight={40}
+            logoHeight={48}
             gap={60}
             pauseOnHover
             scaleOnHover
