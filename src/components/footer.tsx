@@ -18,18 +18,20 @@ export default function Footer() {
                     <a href="mailto:tanishpareek2005@mail.com" className="text-muted-foreground hover:text-primary transition-colors"><Mail className="h-6 w-6" /></a>
                 </div>
 
-                <div className="mt-8 border-t pt-6 flex flex-col sm:flex-row justify-between items-center text-sm text-muted-foreground gap-4">
-                    <p>&copy; {new Date().getFullYear()} Tanish Sunita Pareek. All Rights Reserved.</p>
-                    <div className='flex items-center gap-4'>
-                        <p>Designed & Built with ❤️ and 🏎️</p>
-                    </div>
-                </div>
-
                 <blockquote className="mt-8 max-w-3xl mx-auto">
                     <p className="text-lg md:text-xl italic text-foreground/90 animate-glow">
-                        &ldquo;I have stumbled, I have soared, I have created, and I have led. With every challenge, I carry the fire of resilience and the courage of vision. I am <span className="primary-gradient-text not-italic font-semibold">Tanish Sunita Pareek</span> — and still, I rise.&rdquo;
+                        &ldquo;I have stumbled, I have soared, I have created, and I have led. With every challenge, I carry the fire of resilience and the courage of vision.
+                        <br />
+                        I am <span className="primary-gradient-text not-italic font-semibold">Tanish Sunita Pareek</span> — and still, I rise.&rdquo;
                     </p>
                 </blockquote>
+
+                <div className="mt-8 border-t pt-6 flex flex-col sm:flex-row justify-between items-center text-sm text-muted-foreground gap-4">
+                    <p>&copy; 2025 Tanish Sunita Pareek. All Rights Reserved.</p>
+                    <div className='flex items-center gap-4'>
+                        <p>Designed & Built with ❤️ by TSP</p>
+                    </div>
+                </div>
             </div>
         </footer>
     );
