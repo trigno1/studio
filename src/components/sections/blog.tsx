@@ -7,25 +7,25 @@ import { Card, CardContent, CardTitle } from '@/components/ui/card';
 
 const blogPosts = [
     {
-        src: 'https://picsum.photos/1280/720',
-        title: 'My Journey into Web3 and Blockchain',
+        src: '/digital-agreements.png',
+        title: 'Smart Contracts: Simplifying Digital Agreements',
         category: 'Technology',
         url: '#',
-        hint: 'blockchain technology',
+        hint: 'digital contract signature',
     },
     {
-        src: 'https://picsum.photos/1280/720',
-        title: 'The Art of Community Building',
+        src: '/investing in stock market.png',
+        title: 'Unlocking the Stock Market as a College Student',
         category: 'Community',
         url: '#',
-        hint: 'people collaborating',
+        hint: 'stock market chart',
     },
     {
         src: 'https://picsum.photos/1280/720',
-        title: 'UI/UX Principles for Developers',
-        category: 'Design',
+        title: 'Blockchain: Is It the Solution for Secure and Transparent Elections?',
+        category: 'Blockchain',
         url: '#',
-        hint: 'design wireframe',
+        hint: 'secure voting blockchain',
     },
 ];
 
