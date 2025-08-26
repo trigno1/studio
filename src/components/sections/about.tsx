@@ -13,9 +13,11 @@ import Autoplay from "embla-carousel-autoplay";
 import * as React from "react";
 
 const images = [
-    { src: "https://placehold.co/600x400.png", alt: "Tanish Pareek 1", hint: "portrait professional" },
-    { src: "https://placehold.co/600x400.png", alt: "Tanish Pareek 2", hint: "working computer" },
-    { src: "https://placehold.co/600x400.png", alt: "Tanish Pareek 3", hint: "team collaboration" },
+    { src: "/cropped-image (1)-min (1) - Tanish Sunita Pareek.jpg", alt: "Tanish Pareek 1", hint: "portrait professional" },
+    { src: "/image-1 .jpg", alt: "Tanish Pareek 2", hint: "working computer" },
+    { src: "/IMG_5393.jpg", alt: "Tanish Pareek 3", hint: "team collaboration" },
+    { src: "/Screenshot (142).png", alt: "Tanish Pareek 4", hint: "team collaboration" },
+    { src: "/Screenshot (142).png", alt: "Tanish Pareek 5", hint: "team collaboration" },
 ];
 
 export default function AboutSection() {
