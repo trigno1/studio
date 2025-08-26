@@ -22,7 +22,7 @@ const images = [
 
 export default function AboutSection() {
     const plugin = React.useRef(
-        Autoplay({ delay: 2000, stopOnInteraction: true })
+        Autoplay({ delay: 2000, stopOnInteraction: false })
     );
 
     return (
@@ -51,8 +51,6 @@ export default function AboutSection() {
                     <Carousel 
                         className="w-full max-w-sm mx-auto"
                         plugins={[plugin.current]}
-                        onMouseEnter={plugin.current.stop}
-                        onMouseLeave={plugin.current.reset}
                     >
                         <CarouselContent>
                             {images.map((image, index) => (
