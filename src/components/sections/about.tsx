@@ -35,11 +35,14 @@ export default function AboutSection() {
             <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
                 <div className="order-2 md:order-1">
                     <h2 className="text-3xl md:text-5xl font-bold">About Me</h2>
-                    <p className="mt-4 text-lg text-foreground/80">
-                        I am a versatile and driven professional with a passion for technology and design. My expertise spans across graphic design, UI/UX, blockchain development, and community management. I thrive on leading impactful projects, from organizing large-scale hackathons to building and nurturing vibrant coding communities.
+                    <p className="mt-4 text-base text-foreground/80 text-justify">
+                        Hi, I am Tanish! I’m a versatile professional passionate about the intersection of blockchain, Web3, design, and community building. My expertise spans blockchain development, Web3 ecosystems, community management, and graphic design, allowing me to merge creative storytelling with technical innovation.
                     </p>
-                    <p className="mt-4 text-lg text-foreground/80">
-                        With a strong foundation in both creative and technical domains, I enjoy solving complex problems and delivering high-quality results. Whether it's crafting compelling visuals, developing secure smart contracts, or fostering collaborative environments, I am dedicated to making a positive impact.
+                    <p className="mt-4 text-base text-foreground/80 text-justify">
+                        I love leading impactful projects — from organizing large-scale national hackathons with thousands of participants to building vibrant tech communities that foster learning, collaboration, and innovation. Whether it’s designing compelling visuals, developing secure blockchain solutions, or driving community growth, I bring a balance of creativity and technical insight.
+                    </p>
+                    <p className="mt-4 text-base text-foreground/80 text-justify">
+                        Curious, driven, and impact-focused, I aim to contribute to shaping the future of technology and communities through meaningful initiatives.
                     </p>
                 </div>
                 <div className="order-1 md:order-2">
