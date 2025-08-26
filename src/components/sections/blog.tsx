@@ -1,3 +1,4 @@
+
 'use client';
 import { motion } from 'framer-motion';
 import { Carousel, Card as CarouselCard, BlurImage } from '@/components/ui/expandable-carousel';
@@ -17,11 +18,11 @@ const blogPosts = [
         src: '/investing in stock market.png',
         title: 'Unlocking the Stock Market as a College Student',
         category: 'Community',
-        url: '#',
+        url: 'https://www.linkedin.com/pulse/unlocking-stock-market-college-student-tanish-sunita-pareek-vkaoc',
         hint: 'stock market chart',
     },
     {
-        src: 'https://picsum.photos/1280/720',
+        src: '/election.png',
         title: 'Blockchain: Is It the Solution for Secure and Transparent Elections?',
         category: 'Blockchain',
         url: '#',
