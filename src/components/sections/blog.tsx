@@ -22,7 +22,7 @@ const blogPosts = [
         hint: 'stock market chart',
     },
     {
-        src: '/election.png',
+        src: '/blockchain-elections.png',
         title: 'Blockchain: Is It the Solution for Secure and Transparent Elections?',
         category: 'Blockchain',
         url: '#',
