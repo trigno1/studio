@@ -26,7 +26,7 @@ export default function PortfolioSection() {
             transition={{ duration: 0.8 }}
         >
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl md:text-5xl font-bold text-center">My Portfolio</h2>
+                <h2 className="text-3xl md:text-5xl font-bold text-center"><span className="primary-gradient-text">My</span> Portfolio</h2>
                 
                 <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-12 max-w-4xl mx-auto">
                     <AnimatePresence>

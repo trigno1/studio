@@ -34,7 +34,7 @@ export default function AboutSection() {
         >
             <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
                 <div className="order-2 md:order-1">
-                    <h2 className="text-3xl md:text-5xl font-bold">About Me</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold">About <span className="primary-gradient-text">Me</span></h2>
                     <p className="mt-4 text-base text-foreground/80 text-justify">
                         Hi, I am Tanish! I’m a versatile professional passionate about the intersection of blockchain, Web3, design, and community building. My expertise spans blockchain development, Web3 ecosystems, community management, and graphic design, allowing me to merge creative storytelling with technical innovation.
                     </p>

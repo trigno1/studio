@@ -53,7 +53,7 @@ export default function ExperienceSection() {
             transition={{ duration: 0.8 }}
         >
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl md:text-5xl font-bold text-center">Leadership & Experience</h2>
+                <h2 className="text-3xl md:text-5xl font-bold text-center">Leadership <span className="primary-gradient-text">&</span> Experience</h2>
                 <p className="mt-4 text-lg text-center text-foreground/70 max-w-2xl mx-auto">My professional journey and community involvement.</p>
 
                 <div className="relative mt-16 max-w-3xl mx-auto">

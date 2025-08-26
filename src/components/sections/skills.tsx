@@ -37,7 +37,7 @@ export default function SkillsSection() {
       transition={{ duration: 0.8 }}
     >
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-5xl font-bold">Tools & Technologies</h2>
+        <h2 className="text-3xl md:text-5xl font-bold">Tools <span className="primary-gradient-text">&</span> Technologies</h2>
         <p className="mt-4 text-lg text-foreground/70 max-w-2xl mx-auto">
           A look at the modern technologies I work with to bring ideas to life.
         </p>
