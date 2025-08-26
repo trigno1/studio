@@ -110,7 +110,7 @@ export default {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'caret-blink': 'caret-blink 1.25s ease-out infinite',
-        'flash': 'flash 1.5s ease-in-out forwards',
+        'flash': 'flash 5s ease-in-out forwards',
       },
     },
   },

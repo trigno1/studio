@@ -25,7 +25,7 @@ export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
             setTimeout(() => setStep(10), 11000),
             setTimeout(() => {
                 setShowFlash(true);
-                setTimeout(onFinish, 1500); // Flash duration
+                setTimeout(onFinish, 5000); // Flash duration
             }, totalDuration + 500)
         ];
 
@@ -40,7 +40,7 @@ export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
             exit={{ opacity: 0, transition: { duration: 0.5 } }}
         >
             <Terminal 
-                className="w-full max-w-2xl h-auto"
+                className="w-full max-w-2xl h-72"
                 textClassName="text-sm md:text-base"
             >
                 {step >= 0 && <TypingAnimation text="> Hey! Simon Riley are you ready" />}
