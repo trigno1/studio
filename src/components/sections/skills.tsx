@@ -21,7 +21,7 @@ const techLogos = [
   { node: <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original-wordmark.svg" height="40" width="40" alt="Arduino" />, title: 'Arduino' },
   { node: <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" width="40" alt="Java" />, title: 'Java' },
   { node: <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" height="40" width="40" alt="GitHub" />, title: 'GitHub' },
-  { node: <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon/devicon-original.svg" height="40" width="40" alt="Devicon" />, title: 'Devicon' },
+  { node: <Image src="/logo-tanish.png" height="40" width="40" alt="TSP Logo" />, title: 'TSP' },
   { node: <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" height="40" width="40" alt="NPM" />, title: 'NPM' },
   { node: <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" height="40" width="40" alt="LaTeX" />, title: 'LaTeX' },
 ];
