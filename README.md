@@ -1,9 +1,8 @@
 
 <p align="center">
-  <!-- Replace with your logo -->
-  <img src="<img width="500" height="500" alt="ChatGPT_Image_Aug_27__2025__11_57_44_AM-removebg-preview" src="https://github.com/user-attachments/assets/5670430d-8c8d-461a-aa0c-8a81c6c4c3d5" />
-" alt="Logo" width="120" />
+  <img src="https://github.com/user-attachments/assets/5670430d-8c8d-461a-aa0c-8a81c6c4c3d5" alt="Logo" width="170" />
 </p>
+
 
 <h1 align="center">🌐 Personal Portfolio</h1>
 
@@ -47,11 +46,9 @@ Currently, I’m seeking opportunities to:
 Below are snapshots of the different sections of my portfolio website:  
 
 ---
-
 ### ⏳ Loading Screen  
 <p align="center">
-  <img src="<img width="1920" height="1080" alt="Screenshot (153)" src="https://github.com/user-attachments/assets/3d7fd3bd-c7a4-4f0e-8c0a-5e22988595d1" />
-" alt="Loading Screen" width="600" /><br/>
+  <img src="https://github.com/user-attachments/assets/3d7fd3bd-c7a4-4f0e-8c0a-5e22988595d1" alt="Loading Screen" width="600" /><br/>
   <em>Initial loading screen with smooth transition effect</em>
 </p>
 
@@ -59,8 +56,7 @@ Below are snapshots of the different sections of my portfolio website:
 
 ### 🚀 Hero Section  
 <p align="center">
-  <img src="<img width="1920" height="1080" alt="Screenshot (143)" src="https://github.com/user-attachments/assets/db3a8e9d-22f1-42f8-ae24-2923bef67b12" />
-" alt="Hero Section" width="600" /><br/>
+  <img src="https://github.com/user-attachments/assets/db3a8e9d-22f1-42f8-ae24-2923bef67b12" alt="Hero Section" width="600" /><br/>
   <em>Engaging introduction with call-to-action</em>
 </p>
 
@@ -68,8 +64,7 @@ Below are snapshots of the different sections of my portfolio website:
 
 ### 🙋 About Me  
 <p align="center">
-  <img src="<img width="1920" height="1080" alt="Screenshot (144)" src="https://github.com/user-attachments/assets/c05f9515-d18b-4da6-8365-a57a570ade76" />
-" alt="About Me Section" width="600" /><br/>
+  <img src="https://github.com/user-attachments/assets/c05f9515-d18b-4da6-8365-a57a570ade76" alt="About Me Section" width="600" /><br/>
   <em>Personal introduction with skills & background</em>
 </p>
 
@@ -77,8 +72,7 @@ Below are snapshots of the different sections of my portfolio website:
 
 ### 💼 Experience  
 <p align="center">
-  <img src="<img width="1920" height="1080" alt="Screenshot (145)" src="https://github.com/user-attachments/assets/e1141329-29d5-48f1-9768-84f6e75736c5" />
-" alt="Experience Section" width="600" /><br/>
+  <img src="https://github.com/user-attachments/assets/e1141329-29d5-48f1-9768-84f6e75736c5" alt="Experience Section" width="600" /><br/>
   <em>Work and leadership experiences highlighted</em>
 </p>
 
@@ -86,19 +80,16 @@ Below are snapshots of the different sections of my portfolio website:
 
 ### 📂 Portfolio  
 <p align="center">
-  <img src="<img width="1920" height="1080" alt="Screenshot (146)" src="https://github.com/user-attachments/assets/7d2ad549-0b63-434d-a989-da5e73c7a3b2" />
-" alt="Portfolio Section" width="600" /><br/>
-   <img src="<img width="1920" height="1080" alt="Screenshot (147)" src="https://github.com/user-attachments/assets/6db4fe31-57b7-465b-9881-74fe4f9773f9" />
-" alt="Tools and Technology Section" width="600" /><br/>
+  <img src="https://github.com/user-attachments/assets/7d2ad549-0b63-434d-a989-da5e73c7a3b2" alt="Portfolio Section" width="600" /><br/>
+  <img src="https://github.com/user-attachments/assets/6db4fe31-57b7-465b-9881-74fe4f9773f9" alt="Portfolio Section 2" width="600" /><br/>
   <em>Showcase of my projects with live demos and GitHub links</em>
 </p>
 
 ---
 
-### 🛠️ Tools & Technology  /    🎓 Education
+### 🛠️ Tools & Technology / 🎓 Education  
 <p align="center">
-  <img src="<img width="1920" height="1080" alt="Screenshot (148)" src="https://github.com/user-attachments/assets/08e4dbbe-05de-458b-b420-9b5e13bc575f" />
-" alt="Tools and Technology Section" width="600" /><br/>
+  <img src="https://github.com/user-attachments/assets/08e4dbbe-05de-458b-b420-9b5e13bc575f" alt="Tools and Technology Section" width="600" /><br/>
   <em>Technologies, frameworks, and tools I use</em>
 </p>
 
@@ -106,8 +97,7 @@ Below are snapshots of the different sections of my portfolio website:
 
 ### 📝 Blogs  
 <p align="center">
-  <img src="<img width="1920" height="1080" alt="Screenshot (149)" src="https://github.com/user-attachments/assets/2e7e600e-2dea-4002-becc-5e6b065f5db4" />
-" alt="Blogs Section" width="600" /><br/>
+  <img src="https://github.com/user-attachments/assets/2e7e600e-2dea-4002-becc-5e6b065f5db4" alt="Blogs Section" width="600" /><br/>
   <em>Articles and blogs I’ve written</em>
 </p>
 
@@ -115,8 +105,7 @@ Below are snapshots of the different sections of my portfolio website:
 
 ### 📄 Resume  
 <p align="center">
-  <img src="<img width="1920" height="1080" alt="Screenshot (150)" src="https://github.com/user-attachments/assets/f3c63d68-c1c4-44cd-9d35-44ddb26f6fc1" />
-" alt="Resume Section" width="600" /><br/>
+  <img src="https://github.com/user-attachments/assets/f3c63d68-c1c4-44cd-9d35-44ddb26f6fc1" alt="Resume Section" width="600" /><br/>
   <em>Quick access to my latest resume</em>
 </p>
 
@@ -124,8 +113,7 @@ Below are snapshots of the different sections of my portfolio website:
 
 ### 📌 Footer  
 <p align="center">
-  <img src="<img width="1920" height="1080" alt="Screenshot (151)" src="https://github.com/user-attachments/assets/58fb9dea-18a0-44ed-8a27-e473b6f58566" />
-" alt="Footer Section" width="600" /><br/>
+  <img src="https://github.com/user-attachments/assets/58fb9dea-18a0-44ed-8a27-e473b6f58566" alt="Footer Section" width="600" /><br/>
   <em>Navigation, contact links, and copyright info</em>
 </p>
 
