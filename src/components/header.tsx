@@ -59,7 +59,7 @@ export default function Header() {
       transition={{ duration: 0.5 }}
     >
       <Link href="#home" className="flex items-center">
-        <Image src="/logo-tanish.png" alt="Tanish Sunita Pareek Logo" width={120} height={40} className="h-10 w-auto" />
+        <Image src="/logo-tanish.png" alt="Tanish Sunita Pareek Logo" width={144} height={48} className="h-12 w-auto" />
       </Link>
       <nav className="hidden md:flex items-center space-x-2">
         {navItems.map((item) => (
