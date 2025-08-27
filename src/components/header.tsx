@@ -8,6 +8,7 @@ import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import Image from 'next/image';
 
 const navItems = [
   { name: 'Home', href: '#home' },
@@ -57,8 +58,8 @@ export default function Header() {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <Link href="#home" className="text-2xl font-black uppercase text-primary tracking-widest">
-        Tanish
+      <Link href="#home" className="flex items-center">
+        <Image src="/Logo.png" alt="Tanish Sunita Pareek Logo" width={120} height={40} className="h-10 w-auto" />
       </Link>
       <nav className="hidden md:flex items-center space-x-2">
         {navItems.map((item) => (
